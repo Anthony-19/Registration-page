@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 18px;
+}
+body {
+    font-family: "Roboto", sans-serif;
+}
+.container{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.container--flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* background-color: blue; */
+    width: 100vw;
+    max-width: 70vw;
+}
+.container--form {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    height: 36px;
+    border-radius: 5px;
+    text-indent: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: rgba(126, 124, 124, 0.4);
+    border: none;
+    outline: none;
+}
+.login--button {
+    height: 36px;
+    border-radius: 10px;
+    background-color: rgba(108, 99, 255, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+label {
+    text-align: center;
+    padding-top: 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+.login--icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.5rem;
+}
+.bi-facebook,
+.bi-apple,
+.google--icon {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid black;
+    cursor: pointer;
+}
+.bi-facebook{
+    color: white;
+    background-color: rgb(66,103,178);
+    border: none;
+}
+.sign--in {
+    text-decoration: none;
+}
+/* .login--form {
+     min-width: 300px;
+} */
+.have--account {
+    min-width: 300px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+.logo img{
+    max-width: 400px;
+}
+@media screen and (max-width: 768px) {
+    .container--text {
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 360px) {
+    .create--account {
+        font-size: 1.9rem;
+    }
+}
+@media screen and (max-width: 280px) {
+    .create--account {
+        font-size: 1.5rem;
+    }
+    .container--form{
+        max-width: 80vw;
+        margin: 0 auto;
+    }
+    .logo img{
+        max-width: 250px;
+    }
+}
+
+/* .logo img{
+    max-width: 100px;
+} */
